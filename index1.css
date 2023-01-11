@@ -1,0 +1,283 @@
+
+/* 전체 */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* 공통 */
+/* ul, li {
+    list-style: none;
+}
+.conTitle{
+    background-color: blueviolet;
+} */
+
+/* header */
+#mainHeader {
+    width: 100%;
+    height: 600px;
+    background-color: aliceblue;
+}
+#mainTopNavWrap {
+    height: 110px;
+}
+#topNavTop {
+    height: 40px;
+    background-color: antiquewhite;
+    padding: 10px 100px 0px 100px;
+}
+#membership {
+    width: 300px;
+    float: right;
+    background-color: rgb(255, 255, 177);
+}
+#membership>li {
+    float: left;
+}
+#topNavBottom {
+    height: 70px;
+    background-color: beige;
+    padding: 10px 100px;
+}
+#logoWrap {
+    width: 200px;
+    background-color: rgb(221, 255, 231);
+    float: left;
+}
+#menuWrap {
+    width: 700px;
+    background-color: rgb(156, 218, 198);
+    float: left;
+    margin-left: 30px;
+}
+#menuWrap>li {
+    float: left;
+}
+#loginWrap {
+    width: 300px;
+    background-color: rgb(211, 234, 255);
+    float: right;
+}
+#loginWrap>li {
+    float: left;
+}
+#bannerWrap {
+    height: 400px;
+    background-color: rgb(211, 208, 255);
+    position: relative;
+}
+#bannerButton {
+    width: 700px;
+    height: 60px;
+    background-color: rgb(255, 229, 249);
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    bottom: 30px;
+}
+#bannerButton>li {
+    float: left;
+}
+#buttonWrap {
+    height: 80px;
+    background-color: rgb(173, 255, 190);
+    position: relative;
+}
+#button {
+    width: 700px;
+    height: 60px;
+    background-color: rgb(255, 249, 217);
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    top: 10px;
+}
+#button>li {
+    float: left;
+}
+
+/* section */
+/* section {
+    width: 100%;
+    background-color: rgb(167, 214, 255);
+}
+section>article {
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(240, 224, 255);
+    margin: 30px auto;
+} */
+
+#videoLeft {
+    float: left;
+}
+#videoRight {
+    float: right;
+}
+
+/* footer */
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* 초기값 */
+* {
+    padding: 0;
+    margin: 0 auto;
+    /* => 전체 객체
+    margin: 0 0 0 0; */
+}
+ul, ol, li {
+    list-style: none;
+}
+.width_1440 {
+    width: 1440px;
+    overflow: hidden;
+}
+.width_1920 {
+    width: 1920px;
+}
+#wrap {
+    width: 100%;
+    /* => 가로크기 100%는 부모 크기에 맞춤
+    => 객체의 가로 크기 생략시 자동 가로 100%로 인식
+    => float, margin:0, auto, position 사용시 생략안됨 */
+}
+
+/* header 영역 */
+#main_header {
+/* 튀어 나와있는것 없으므로 높이값 자동으로 자식의 영역 크게 맞추도록! */
+    overflow: hidden;
+    background-color: aliceblue;
+}
+#top_line_wrap {
+    height: 30px;
+    border-bottom: 2px solid #000000;
+}
+#center_width {
+    height: 100%;
+    /* => 클래스 overflow 설정으로 높이값 이상 내용 추가시 잘림 */
+    /* width_1440으로 가로 세로 크기 정렬 추가함 */
+    background-color: antiquewhite;
+}
+#meb_wrap {
+    width: 300px;
+    height: 30px;
+    background-color: beige;
+    float: right;
+}
+#meb_wrap li {
+    float: left;
+}
+#center_nav_wrap {
+    background-color: rgb(232, 209, 255);
+}
+#main_logo {
+    float: left;
+    width: 100px;
+    height: 80px;
+    background-color: rgb(255, 207, 145);
+}
+#main_menu {
+    width: 300px;
+    height: 80px;
+    background-color: azure;
+    float: left;
+    margin-left: 50px;
+}
+#login_wrap {
+    width: 200px;
+    height: 80px;
+    background-color: rgb(216, 216, 255);
+    float: right;
+}
+/* banner_wrap 영역 */
+#banner_wrap{
+    /* 가로, 중앙 정렬은 width_1920 삽입  */
+    height: 500px;
+    overflow: hidden;
+    background-color: rgb(213, 255, 241);
+    position: relative;
+}
+#banner_list_but_wrap {
+    /* 가로 세로 width_1440 삽입 */
+    background-color: rgb(255, 228, 247);
+    position: absolute;
+    left: 50%;
+    margin-left: -720px;
+    bottom: 20px;
+}
+#banner_list_but_wrap li {
+    float: left;
+    width: 25%;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* section 영역 */
+#main_section {
+    /* width_1440으로 가로세로 중앙정렬 */
+    background: palegoldenrod;
+}
+#main_section article {
+    overflow: hidden;
+    background-color: #d39894;
+    margin: 30px 0;
+}
+/* con_out_box_1영역 */
+#sub_link_menu_wrap {
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(239, 255, 214);
+}
+#today_best_article {
+    height: 450px;
+    background-color: rgb(228, 218, 255);
+}
+
+/* con_out_box_2영역 */
+#folin_live {
+    width: 800px;
+    height: 700px;
+    background-color: rgb(153, 153, 177);
+    float: left;
+}
+#new_video {
+    width: 600px;
+    height: 700px;
+    background-color: rgb(201, 179, 153);
+    float: right;
+}
+/* con_out_box_3영역 */
+#news_letter, #paper{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(165, 182, 182);
+}
+/* con_out_box_4영역 */
+/* #paper{ }
+    news_letter와 같은 스타일 */ 
+/* con_out_box_5영역 */
+#linker_but_wrap{
+    height: 40px;
+    background-color: rgb(91, 173, 211);
+    margin-bottom: 20px;
+}
+#linker_con_wrap{
+    height: 150px;
+    background-color: rgb(91, 211, 165);
+}
+/* footer 영역 */
+#main_footer {
+    /* 가로 100% 생략
+    세로 자식의 크기에 맞춤 */
+    height: 300px;
+    overflow: hidden;
+    background-color: rgb(210, 210, 255);
+}
